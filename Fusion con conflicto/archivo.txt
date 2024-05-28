@@ -1,1 +1,2 @@
-Hola! ejercicio 3 fusion con conflicto
+Hola! ejercicio 3 fusion con conflicto --- aca tambien modifico para crear discordia
+mensaje modificado para crear conflicto con master
