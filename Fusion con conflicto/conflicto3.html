@@ -2,21 +2,44 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Ejercicio 04</title>
+    <title>Ejercicio 05</title>
   </head>
   <body>
+    <p id="texto">Un Texto</p>
     <div>
-      <label for="base">Base</label>
-      <input id="base" name="base" type="number" />
+      <label for="colorTexto">Color del texto</label>
+      <select id="colorTexto" name="colorTexto">
+        <option value="black">Negro</option>
+        <option value="red">Rojo</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+      </select>
     </div>
     <div>
-      <label for="altura">Altura</label>
-      <input id="altura" name="altura" type="number" />
+      <label for="colorFondo">Color del fondo</label>
+      <select id="colorFondo" name="colorFondo">
+        <option value="white">Blanco</option>
+        <option value="red">Rojo</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+      </select>
     </div>
-    <button id="perimetro">Perimetro</button>
-    <button id="superficie">Superficie</button>
+    <div>
+        <label for="base">Base</label>
+        <input id="base" name="base" type="number" />
+      </div>
+      <div>
+        <label for="altura">Altura</label>
+        <input id="altura" name="altura" type="number" />
+      </div>
+      <button id="perimetro">Perimetro</button>
+      <button id="superficie">Superficie</button>
   </body>
   <script>
+    const texto = $("texto");
+    const colorTexto = $("colorTexto");
+    const colorFondo = $("colorFondo");
+
     const base = $("base");
     const altura = $("altura");
     const perimetro = $("perimetro");
@@ -36,4 +59,4 @@
       return document.getElementById(elemento);
     }
   </script>
-</html>
+</html>  
