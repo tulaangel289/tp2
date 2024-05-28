@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 04</title>
+  </head>
+  <body>
+    <div>
+      <label for="base">Base</label>
+      <input id="base" name="base" type="number" />
+    </div>
+    <div>
+      <label for="altura">Altura</label>
+      <input id="altura" name="altura" type="number" />
+    </div>
+    <button id="perimetro">Perimetro</button>
+    <button id="superficie">Superficie</button>
+  </body>
+  <script>
+    const base = $("base");
+    const altura = $("altura");
+    const perimetro = $("perimetro");
+    const superficie = $("superficie");
+
+    perimetro.onclick = () => {
+      const resultadoPerimetro = base.value * 2 + altura.value * 2;
+      alert(`El perimetro vale: ${resultadoPerimetro}`);
+    };
+
+    superficie.onclick = () => {
+      const resultadoSuperficie = base.value * altura.value;
+      alert(`La superficie vale: ${resultadoSuperficie}`);
+    };
+
+    function $(elemento) {
+      return document.getElementById(elemento);
+    }
+  </script>
+</html>
