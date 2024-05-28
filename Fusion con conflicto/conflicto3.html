@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 05</title>
+  </head>
+  <body>
+    <p id="texto">Un Texto</p>
+    <div>
+      <label for="colorTexto">Color del texto</label>
+      <select id="colorTexto" name="colorTexto">
+        <option value="black">Negro</option>
+        <option value="red">Rojo</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+      </select>
+    </div>
+    <div>
+      <label for="colorFondo">Color del fondo</label>
+      <select id="colorFondo" name="colorFondo">
+        <option value="white">Blanco</option>
+        <option value="red">Rojo</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+      </select>
+    </div>
+  </body>
+  <script>
+    const texto = $("texto");
+    const colorTexto = $("colorTexto");
+    const colorFondo = $("colorFondo");
+
+    colorTexto.onchange = () => {
+      texto.style.color = colorTexto.value;
+    };
+
+    colorFondo.onchange = () => {
+      texto.style.backgroundColor = colorFondo.value;
+      //document.body.style.backgroundColor = colorFondo.value;
+    };
+
+    // simplificar el uso de getElementById
+    function $(elemento) {
+      return document.getElementById(elemento);
+    }
+  </script>
+</html>
