@@ -63,3 +63,14 @@ button {
 button:hover {
     background-color: #1f2b33;
 }
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    width: 100%; 
+    max-width: 300px; 
+    cursor: pointer;
+}
