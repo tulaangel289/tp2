@@ -63,3 +63,26 @@ button {
 button:hover {
     background-color: #1f2b33;
 }
+
+select {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+select:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin: 16px 0;
+}
