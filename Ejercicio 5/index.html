@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1>CALCULO DE AREA DE UN TERRENO</h1>
+        <form id="formulario">
+            <label for="opcion"></label>
+            <select name="opcion" id="opcion">
+                <option value="calNormal">Calculo normal</option>
+                <option value="calTrapecio">Calculo trapecio rectangulo</option>
+            </select>
+            <div>
+                <label for="variableA" id="labelA">Ingrese altura:</label>
+                <input id="variableA" type="number" step="0,01" name="variableA" required>
+            </div>
+            <div>
+                <label for="variableB" id="labelB">Ingrese base <base href="">:</label>
+                <input id="variableB" type="number" step="0.01" name="variableB" required>
+            </div>
+            <div>
+                <label for="variableC" id="labelC"></label>
+                <input type="number" name="variableC" type="number" id="variableC">
+            </div>
+            <p id="mensaje"></p>
+            <button type="submit">CALCULAR</button>
+        </form>
+    </div>
+    </body>
+        <script src="script.js" async></script> 
+    </body>
+</html>

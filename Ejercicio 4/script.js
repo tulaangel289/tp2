@@ -1,5 +1,7 @@
 const formulario = $("formulario");
     const mensaje = $("mensaje")
+    const boton = $("boton")
+
 
     formulario.addEventListener("submit",(e) => {
         const peso = (formulario["peso"].value);
