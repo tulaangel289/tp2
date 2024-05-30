@@ -1,0 +1,104 @@
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc; 
+    transition: background-color 0.3s ease; 
+}
+
+
+ul li:hover {
+    background-color: #e0e0e0; 
+}
+
+
+ul li:first-child {
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
+}
+
+
+ul li:last-child {
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px;
+}
+
+
+
+
+
+
+
+
+.button-container {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+
+.button-container button#usuarios {
+    display: inline-block;
+    padding: 12px 24px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #4CAF50; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+
+}
+
+
+.button-container button#usuarios:hover {
+    background-color: #45a049;  
+}
+
+h1 {
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 32px; 
+    font-weight: bold; 
+    color: #333; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    background-color: aliceblue;
+}
+
+h3 {
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 15px; 
+    font-weight: bold; 
+    color: #333; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    background-color: aliceblue;
+}
+
+
+ul li button{
+    padding: 10px 20px; 
+    font-size: 10px; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #4CAF50; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    margin-left: 15px;
+}
+
+
+ul li button:hover {
+    background-color: #45a049; 
+}
