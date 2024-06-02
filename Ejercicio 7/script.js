@@ -2,11 +2,16 @@ const listado = $("listado");
 const mostrarUsarios = $("usuarios");
 
     mostrarUsarios.addEventListener("click", async () => {
-    
+
+
+        const cantidadElementos = listado.getElementsByTagName("li").length;
+
+        if (cantidadElementos == 0){
+
         const res = await fetch("https://jsonplaceholder.typicode.com/users");
         const res2 =  await fetch("https://jsonplaceholder.typicode.com/todos")
         const tareas = await res2.json();
-    if (res.ok) {
+        if (res.ok) {
         console.log("llegaron los datos!");
 
         const personas = await res.json();
@@ -63,10 +68,16 @@ const mostrarUsarios = $("usuarios");
         } else {
         console.error("Error: no llegaron los datos");
         }
+
+        } else {
+
+        }
+    
+        
     });
 
 
 
     function $(elemento) {
-      return document.getElementById(elemento);
+    return document.getElementById(elemento);
     }
